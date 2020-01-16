@@ -1,0 +1,8 @@
+{
+    "Host": "mysql.localhost"
+  , "Port": "3306"
+  , "Name": "database_name"
+  , "User": "user_name"
+  , "Pswd": "user_password"
+  , "Char": "utf8"
+}
