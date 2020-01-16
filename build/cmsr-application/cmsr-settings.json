@@ -1,0 +1,9 @@
+{
+    "ApplicationName": "Application name."
+  , "SiteTitle": "Site name."
+  , "TitleSeparator": " | "
+  , "SiteUrl": "http://localhost"
+  , "MasterEMailAdr": "master@localhost"
+  , "ApplicationNameSpace": "CmsrApplication"
+  , "DeveloperMode": false
+}

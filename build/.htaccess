@@ -1,0 +1,27 @@
+# ================================================================
+# Routing
+# ================================================================
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteCond %{THE_REQUEST} ^.*/index.html
+    RewriteRule ^(.*)index.html$ /$1 [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.php [L]
+</IfModule> 
+
+
+
+# ================================================================
+# Security
+# ================================================================
+Header set X-Content-Type-Options nosniff
+Options -Indexes
+allow from all
+
+<Files ~ "^(cmsr-.*\.json)$">
+    deny from all
+</Files>

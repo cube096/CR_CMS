@@ -1,0 +1,37 @@
+[
+    {
+        "RequestUri": "/"
+      , "ControllerName": "Application\\Controller\\IndexController"
+      , "ViewFile": "View/index.tpl"
+    }
+  , {
+        "RequestUri": "/page/"
+      , "ControllerName": "Application\\Controller\\PageController"
+      , "ViewFile": "View/page.tpl"
+    }
+  , {
+        "RequestUri": "/archive/"
+      , "ControllerName": "Application\\Controller\\Archive\\ArchiveController"
+      , "ViewFile": "View/archive/archive.tpl"
+    }
+  , {
+        "RequestUri": "/archive/[1-9]{1,20}/"
+      , "ControllerName": "Application\\Controller\\Archive\\ArticleController"
+      , "ViewFile": "View/archive/article.tpl"
+    }
+  , {
+        "RequestUri": "/contact/"
+      , "ControllerName": "Application\\Controller\\Contact\\ContactController"
+      , "ViewFile": "View/contact/contact.tpl"
+    }
+  , {
+        "RequestUri": "/contact/confirm/"
+      , "ControllerName": "Application\\Controller\\Contact\\ConfirmController"
+      , "ViewFile": "View/contact/confirm.tpl"
+    }
+  , {
+        "RequestUri": "/contact/thanks/"
+      , "ControllerName": "Application\\Controller\\Contact\\ThanksController"
+      , "ViewFile": "View/contact/thanks.tpl"
+    }
+]
